@@ -1,2 +1,3 @@
 worker: node index.js
-heroku ps:scale web=1
+main: node index.js
+web: node index.js
