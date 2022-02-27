@@ -2,7 +2,7 @@
   "name": "theisert",
   "description": "Bot de Discord",
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "version": "1.0.0",
   "main": "index.js",
