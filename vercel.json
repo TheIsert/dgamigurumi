@@ -1,15 +1,21 @@
 {
-    "version": "2",
+    "version": 2,
+    "name": "petgram-theisert",
     "builds": [
-        {
-            "src": "./index.js",
-            "user": "@vercel/node"
-        }
+        { "use": "@vercel/static-build", "src": "package.json"}
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/"
+            "src": "(.*).js",
+            "dest": "/$1.js"            
+        },
+        {
+            "src": "(.*).json",
+            "dest": "/$1.json"            
+        },
+        {
+            "src": "/.*",
+            "dest": "index.html"
         }
     ]
-}
+} 
