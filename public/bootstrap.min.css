@@ -10627,6 +10627,7 @@ fieldset:disabled .btn {
 }
 
 @media (min-width:992px) {
+    
     .float-lg-start {
         float: left !important
     }
