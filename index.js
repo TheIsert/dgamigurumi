@@ -1,7 +1,6 @@
 const express = require("express")
 const path = require("path")
 const app = express()
-
 app
 .use("/", require("./routes/routes"))
 .use(express.static(__dirname + '/public'))
