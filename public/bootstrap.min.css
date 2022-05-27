@@ -12,7 +12,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap);
-
+html {
+    scroll-behavior: smooth;
+  }
 :root {
     --bs-blue: #007bff;
     --bs-indigo: #6610f2;
@@ -2712,8 +2714,7 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact
+   print-color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
@@ -12934,4 +12935,50 @@ legend {
     background-color: #f3969a;
     border-radius: 10px;
     border: 3px solid #ffffff00;
+  }
+    .lds-ring {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background-color: #121212;
+    width: 80px;
+    height: 80px;
+  }
+  .hidden{
+      overflow: hidden;
+  }
+  .centrado{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }

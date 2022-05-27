@@ -12,6 +12,13 @@
 </head>
 
 <body>
+   
+    <body class="hidden ">
+        <div class="centrado" id="onload">
+                <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+        </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -29,14 +36,34 @@
     </nav>
 
     <div class="jumbotron text-center bg-dark p-4">
-        <img src="https://i.imgur.com/8h67qH3.pngs" class="rounded-circle mx-auto d-block" width="120px" height="120px">
+        <img src="https://i.imgur.com/8h67qH3.pngs" class="rounded-circle mx-auto d-block" width="120px" height="120px"/>
         <h1 class=" text-white">DGAMIGURUMI</h1>
         <h5 class="text-grey">Amigurumis personalizados</h5>
 
     </div>
-    <!-- <span class="badge bg-dark p-2">NUEVO</span> -->
+   
     <div class="container">
         <div class="row mt-4">
+            <h3 class="text-center mt-3 fw-bold">
+                Manta de Apego <span class="badge bg-dark p-2">NUEVO</span></h3> 
+            <div class="col">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg22">
+                    <img loading="lazy" src="https://i.imgur.com/3FclygH.png"
+                        class="img-fluid rounded mx-auto d-block zoom">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg23">
+                    <img loading="lazy" src="https://i.imgur.com/C196Erg.png"
+                        class="img-fluid rounded mx-auto d-block zoom">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg24">
+                    <img loading="lazy" src="https://i.imgur.com/hMzbuwN.png"
+                        class="img-fluid rounded mx-auto d-block zoom">
+                </a>
+            </div>
             <h3 class="text-center mt-3 fw-bold">
                 Coneja</h3>
             <div class="col">
@@ -343,6 +370,28 @@
             </div>
         </div>
     </div>
+ <!-- manta -->
+    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg22">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img loading="lazy" src="https://i.imgur.com/3FclygH.png" class="img-fluid rounded-3">
+            </div>
+        </div>
+    </div>
+    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg23">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img loading="lazy" src="https://i.imgur.com/C196Erg.png" class="img-fluid rounded-3">
+            </div>
+        </div>
+    </div>
+    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg24">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img loading="lazy" src="https://i.imgur.com/hMzbuwN.png" class="img-fluid rounded-3">
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer class="bg-dark text-white  mt-4">
@@ -373,6 +422,28 @@
     </footer>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<script>
+    window.onload = function(){
+    $('#onload').fadeOut()
+    $('body').removeClass('hidden')
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
 </script>
