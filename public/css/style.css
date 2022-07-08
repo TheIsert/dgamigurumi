@@ -1,0 +1,15 @@
+.fondo {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-image: url("https://i.imgur.com/GCL2Fk4.png");
+    background-size: cover;
+}
+.gris {
+    background: rgba(0, 0, 0, 0.2);
+}
+.gris-oscuro{
+    background: rgba(0, 0, 0, 0.7); 
+    transform: translateY(-2px);
+    transition: .45s;
+}
+

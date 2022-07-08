@@ -53,7 +53,7 @@ html {
     --bs-warning-rgb: 255, 206, 103;
     --bs-danger-rgb: 255, 120, 81;
     --bs-light-rgb: 248, 249, 250;
-    --bs-dark-rgb: 52, 58, 64;
+    --bs-dark-rgb: 217, 101, 37;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 136, 136, 136;
@@ -9100,11 +9100,6 @@ fieldset:disabled .btn {
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important
 }
 
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important
-}
-
 .bg-black {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important
@@ -12789,6 +12784,7 @@ fieldset:disabled .btn {
     background-color: #f3969a !important
 }
 
+
 .border-dark {
     border-color: #f3969a !important
 }
@@ -12981,4 +12977,8 @@ legend {
     100% {
       transform: rotate(360deg);
     }
+  }
+  .text-mr {
+    font-family: 'Mr Dafoe', cursive;
+    color: #d45a22;
   }

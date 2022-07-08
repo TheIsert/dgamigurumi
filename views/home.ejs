@@ -1,454 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="https://i.imgur.com/MBha5tm.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Dgamigurumi</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="icon" href="https://i.imgur.com/MBha5tm.png">
-    <title>dgamigurumi</title>
-</head>
-
-<body>
-   
-    <body class="hidden ">
-        <div class="centrado" id="onload">
-                <div class="spinner-border text-dark" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top gris" id="menu">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">
+                <h4 class="text-mr text-white">Dgamigurumi</h4>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/trabajos">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cont">Contacto</a>
+            </li>
+          </ul>
         </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cont">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </nav>
 
-    <div class="jumbotron text-center bg-dark p-4">
-        <img src="https://i.imgur.com/8h67qH3.pngs" class="rounded-circle mx-auto d-block" width="120px" height="120px"/>
-        <h1 class=" text-white">DGAMIGURUMI</h1>
-        <h5 class="text-grey">Amigurumis personalizados</h5>
-
+    <div class="jumbotron text-center bg-dark p-4 img-fluid fondo">
+      <img
+        src="https://i.imgur.com/MBha5tm.png"
+        class="rounded-circle mx-auto d-block mt-5"
+        width="120px"
+        height="120px"
+      />
+      <h1 class="text-white">DGAMIGURUMI</h1>
+      <h5 class="text-grey">Amigurumis personalizados</h5>
     </div>
-   
+
     <div class="container">
-        <div class="row mt-4">
-            <h3 class="text-center mt-3 fw-bold">
-                Manta de Apego <span class="badge bg-dark p-2">NUEVO</span></h3> 
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg22">
-                    <img loading="lazy" src="https://i.imgur.com/3FclygH.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg23">
-                    <img loading="lazy" src="https://i.imgur.com/C196Erg.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg24">
-                    <img loading="lazy" src="https://i.imgur.com/hMzbuwN.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <h3 class="text-center mt-3 fw-bold">
-                Coneja</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg16">
-                    <img loading="lazy" src="https://i.imgur.com/3sESOra.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg17">
-                    <img loading="lazy" src="https://i.imgur.com/LiYdA4t.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg18">
-                    <img loading="lazy" src="https://i.imgur.com/vAHkR8Q.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <h3 class="text-center mt-3 fw-bold">
+      <div class="row mt-4 text-center" id="beneficios">
+        <h3 class="fw-bold mt-5">¿Qué son los amigurumis?</h3>
+        <h5 class="mb-5">
+          Los amigurumis son muñecos tejidos a mano con la técnica de crochet.
+        </h5>
 
-                Coneja de orejas largas</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg1">
-                    <img loading="lazy" src="https://i.imgur.com/Pq54jw2.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg2">
-                    <img loading="lazy" src="https://i.imgur.com/ArjPOjP.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg3">
-                    <img loading="lazy" src="https://i.imgur.com/qQnphQs.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
+        <div class="col-sm-4 my-3 beneficios-load">
+          <img src="https://i.imgur.com/BT0xYh7.png" width="100px" />
+          <h4>Ayuda a la relajación</h4>
+        </div>
+        <div class="col-sm-4 my-3 beneficios-load">
+          <img src="https://i.imgur.com/7Nd4g8p.png" width="100px" />
+          <h4>Ayuda a desarrollar la imaginación</h4>
+        </div>
+        <div class="col-sm-4 my-3 beneficios-load">
+          <img src="https://i.imgur.com/z7CiwJ8.png" width="100px" />
+          <h4>Reduce el estrés</h4>
+        </div>
+      </div>
 
-            <h3 class="text-center mt-3 fw-bold">
-                Osito</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg4">
-                    <img loading="lazy" src="https://i.imgur.com/AZT0M9v.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
+      <div class="row mt-4 text-center">
+        <div class="col-sm-4 my-3">
+          <img
+            src="https://i.imgur.com/Byzr0ix.png"
+            class="img-fluid rounded my-3"
+            width="350px"
+          />
+          <h4 class="text-black fw-bold">PULPOS Y MANTAS DE APEGO</h4>
+          <a
+            onclick="window.location.href = 'trabajos#pulpos';"
+            class="text-decoration-none"
+          >
+            <h2 class="text-mr">ver todos</h2>
+          </a>
+        </div>
+        <div class="col-sm-4 my-3">
+          <img
+            src="https://i.imgur.com/LiYdA4t.png"
+            class="img-fluid rounded my-3"
+            width="350px"
+          />
+          <h3 class="text-black fw-bold">CONEJOS</h3>
+          <a
+            onclick="window.location.href = 'trabajos#conejos';"
+            class="text-decoration-none"
+          >
+            <h2 class="text-mr">ver todos</h2>
+          </a>
+        </div>
+        <div class="col-sm-4 my-3">
+          <img
+            src="https://i.imgur.com/AZT0M9v.jpg"
+            class="img-fluid rounded my-3"
+            width="350px"
+          />
+          <h3 class="text-black fw-bold">OSOS</h3>
+          <a
+            onclick="window.location.href = 'trabajos#osos';"
+            class="text-decoration-none"
+          >
+            <h2 class="text-mr">ver todos</h2>
+          </a>
+        </div>
+      </div>
+      <div class="row my-5 text-center">
+        <h3 class="text-black">Tenés alguna pregunta?</h3>
+        <h4 class="text-mr">esperamos tu consulta</h4>
+        <p>Si tienes alguna duda ponte en contacto con nosotros.</p>
+        <div class="card-group">
+          <div class="col m-3">
+            <div
+              class="card shadow mx-auto"
+              style="width: 18rem; height: 14rem"
+            >
+              <div class="card-body">
+                <h2 class="card-title my-3" style="color: #d96525">
+                  <i class="bi bi-envelope-fill"></i>
+                </h2>
+                <h6 class="card-subtitle mb-2 text-black my-3">
+                  Contactanos por Email
+                </h6>
+                <a href="#!" style="color: #d96525">
+                  <p class="card-text my-4">
+                    <i class="bi bi-envelope-fill text-black"></i
+                    >danielaguiffrey@gmail.com
+                  </p>
                 </a>
+              </div>
             </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg5">
-                    <img loading="lazy" src="https://i.imgur.com/mgwmNkr.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg6">
-                    <img loading="lazy" src="https://i.imgur.com/BDTAAt5.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
+          </div>
 
-            <h3 class="text-center mt-3 fw-bold">
-                Osita</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg7">
-                    <img loading="lazy" src="https://i.imgur.com/6xFvhbH.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
+          <div class="col m-3">
+            <div
+              class="card shadow mx-auto"
+              style="width: 18rem; height: 14rem"
+            >
+              <div class="card-body">
+                <h2 class="card-title my-3" style="color: #d96525">
+                  <i class="bi bi-instagram"></i>
+                </h2>
+                <h6 class="card-subtitle mb-2 text-black my-3">
+                  Contactanos por Instagram
+                </h6>
+                <a
+                  href="https://www.instagram.com/dgamigurumi/"
+                  style="color: #d96525"
+                >
+                  <p class="card-text my-4">
+                    <i class="bi bi-instagram text-black"></i>dgamigurumi
+                  </p>
                 </a>
+              </div>
             </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg8">
-                    <img loading="lazy" src="https://i.imgur.com/LQUaXXQ.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
+          </div>
+          <div class="col m-3">
+            <div
+              class="card shadow mx-auto"
+              style="width: 18rem; height: 14rem"
+            >
+              <div class="card-body">
+                <h2 class="card-title my-3" style="color: #d96525">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </h2>
+                <h6 class="card-subtitle mb-2 text-black my-3">Ubicación</h6>
+                <p class="card-text text-black my-4">
+                  <i class="bi bi-geo-alt-fill"></i>Villa Elisa, Entre Ríos,
+                  Argentina.
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg9">
-                    <img loading="lazy" src="https://i.imgur.com/UmHgV95.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-
-            <h3 class="text-center mt-3 fw-bold">
-                Stitch</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg19">
-                    <img loading="lazy" src="https://i.imgur.com/OUlNWIA.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg20">
-                    <img loading="lazy" src="https://i.imgur.com/2huSjjU.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg21">
-                    <img loading="lazy" src="https://i.imgur.com/8MLNCVJ.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-
-            <h3 class="text-center mt-3 fw-bold">
-                Dinosaurio</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg10">
-                    <img loading="lazy" src="https://i.imgur.com/kBoDCAf.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg11">
-                    <img loading="lazy" src="https://i.imgur.com/2dnj6PV.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg12">
-                    <img loading="lazy" src="https://i.imgur.com/q7EOai1.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-
-            <h3 class="text-center mt-3 fw-bold">
-                Pulpos de apego</h3>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg13">
-                    <img loading="lazy" src="https://i.imgur.com/c1JCHIY.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg14">
-                    <img loading="lazy" src="https://i.imgur.com/Byzr0ix.png"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImg15">
-                    <img loading="lazy" src="https://i.imgur.com/YNibqzd.jpg"
-                        class="img-fluid rounded mx-auto d-block zoom">
-                </a>
-            </div>
+          </div>
         </div>
-    </div>
-
-
-    <!-- MODAL IMAGE  -->
-
-    <!-- coneja de orejas largas -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/Pq54jw2.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg2">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/ArjPOjP.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg3">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/qQnphQs.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!--   osito -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg4">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/AZT0M9v.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg5">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/mgwmNkr.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg6">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/BDTAAt5.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!-- Osita -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg7">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/6xFvhbH.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg8">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/LQUaXXQ.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg9">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/UmHgV95.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!-- dinosaurio -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg10">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/kBoDCAf.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg11">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/2dnj6PV.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg12">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/q7EOai1.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!-- pulpos -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg13">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/c1JCHIY.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg14">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/Byzr0ix.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg15">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/YNibqzd.jpg" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!-- coneja -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg16">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/3sESOra.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg17">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/LiYdA4t.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg18">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/vAHkR8Q.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <!-- stitch -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg19">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/OUlNWIA.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg20">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/2huSjjU.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg21">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/8MLNCVJ.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
- <!-- manta -->
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg22">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/3FclygH.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg23">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/C196Erg.png" class="img-fluid rounded-3">
-            </div>
-        </div>
-    </div>
-    <div tabindex="-1" aria-labelledby="modalImg1" aria-hidden="true" class="modal fade" id="modalImg24">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <img loading="lazy" src="https://i.imgur.com/hMzbuwN.png" class="img-fluid rounded-3">
-            </div>
-        </div>
+      </div>
     </div>
 
     <!-- footer -->
-    <footer class="bg-dark text-white  mt-4">
-        <div class="container p-4">
-            <div class=" d-grid gap-3 text-center">
-                <div>
-                    <h5 class="text-uppercase"><img src="https://i.imgur.com/8h67qH3.png" class="rounded-circle "
-                            width="60px" height="60px">DGAMIGURUMI</h5>
-                </div>
-
-                <div class=" list-unstyled" id="cont">
-                    <h5 class="text-uppercase">Contacto</h5>
-                    <a href="https://www.instagram.com/dgamigurumi/" class="text-decoration-none text-white"><i
-                            class="bi bi-instagram me-1"></i>DGAMIGURUMI </a>
-                    <br>
-                    <a href="#!" class="text-white text-decoration-none">danielaguiffrey@gmail.com</a>
-                    <a href="#!" class="text-decoration-none text-white">
-                        <p><i class="bi bi-geo-alt-fill me-1"></i>Villa Elisa, Entre Riós</p>
-                    </a>
-                </div>
-                <div class=" align-bottom">
-                    <a href="https://www.instagram.com/franasemb/" class="text-decoration-none text-white text-center">
-                        <p>©Web creada por Franco Asemborn</p>
-                    </a>
-                </div>
-            </div>
+    <footer class="bg-dark text-white mt-4">
+      <div class="p-4 row text-center">
+        <div>
+          <h5 class="text-uppercase">
+            <img
+              src="https://i.imgur.com/8h67qH3.png"
+              class="rounded-circle"
+              width="60px"
+              height="60px"
+            />DGAMIGURUMI
+          </h5>
         </div>
+
+        <div class="list-unstyled" id="cont">
+          <h5 class="text-uppercase">Contacto</h5>
+          <a
+            href="https://www.instagram.com/dgamigurumi/"
+            class="text-decoration-none text-white"
+            ><i class="bi bi-instagram me-1"></i>DGAMIGURUMI
+          </a>
+          <br />
+          <a href="#!" class="text-white text-decoration-none"
+            >danielaguiffrey@gmail.com</a
+          >
+          <a href="#!" class="text-decoration-none text-white">
+            <p>
+              <i class="bi bi-geo-alt-fill me-1"></i>Villa Elisa, Entre Riós
+            </p>
+          </a>
+        </div>
+        <div class="align-bottom">
+          <a
+            href="https://www.instagram.com/franasemb/"
+            class="text-decoration-none text-white text-center"
+          >
+            <p>©Web creada por Franco Asemborn</p>
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).scroll(function () {
+        if ($("#menu").offset().top > 230) {
+          $("#menu").addClass("gris-oscuro");
+        } else {
+          $("#menu").removeClass("gris-oscuro");
+        }
       });
-    } 
-  });
-});
-</script>
-<script>
-    window.onload = function(){
-    $('#onload').fadeOut()
-    $('body').removeClass('hidden')
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-</script>
+    </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
