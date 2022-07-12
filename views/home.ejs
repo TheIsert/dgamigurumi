@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Dgamigurumi</title>
   </head>
 
@@ -53,7 +54,7 @@
               <a class="nav-link" href="#beneficios">Beneficios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cont">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -73,27 +74,29 @@
 
     <div class="container">
       <div class="row mt-4 text-center" id="beneficios">
-        <h3 class="fw-bold mt-5">¿Qué son los amigurumis?</h3>
-        <h5 class="mb-5">
+        <h3 class="fw-bold mt-5" data-aos="zoom-in">
+          ¿Qué son los amigurumis?
+        </h3>
+        <h5 class="mb-5" data-aos="zoom-in">
           Los amigurumis son muñecos tejidos a mano con la técnica de crochet.
         </h5>
 
-        <div class="col-sm-4 my-3 beneficios-load">
+        <div class="col-sm-4 my-3" data-aos="fade-up">
           <img src="https://i.imgur.com/BT0xYh7.png" width="100px" />
           <h4>Ayuda a la relajación</h4>
         </div>
-        <div class="col-sm-4 my-3 beneficios-load">
+        <div class="col-sm-4 my-3" data-aos="fade-up">
           <img src="https://i.imgur.com/7Nd4g8p.png" width="100px" />
           <h4>Ayuda a desarrollar la imaginación</h4>
         </div>
-        <div class="col-sm-4 my-3 beneficios-load">
+        <div class="col-sm-4 my-3" data-aos="fade-up">
           <img src="https://i.imgur.com/z7CiwJ8.png" width="100px" />
           <h4>Reduce el estrés</h4>
         </div>
       </div>
 
       <div class="row mt-4 text-center">
-        <div class="col-sm-4 my-3">
+        <div class="col-sm-4 my-3" data-aos="fade-down-right">
           <img
             src="https://i.imgur.com/Byzr0ix.png"
             class="img-fluid rounded my-3"
@@ -107,7 +110,7 @@
             <h2 class="text-mr">ver todos</h2>
           </a>
         </div>
-        <div class="col-sm-4 my-3">
+        <div class="col-sm-4 my-3" data-aos="zoom-in-up">
           <img
             src="https://i.imgur.com/LiYdA4t.png"
             class="img-fluid rounded my-3"
@@ -121,7 +124,7 @@
             <h2 class="text-mr">ver todos</h2>
           </a>
         </div>
-        <div class="col-sm-4 my-3">
+        <div class="col-sm-4 my-3" data-aos="fade-down-left">
           <img
             src="https://i.imgur.com/AZT0M9v.jpg"
             class="img-fluid rounded my-3"
@@ -136,7 +139,7 @@
           </a>
         </div>
       </div>
-      <div class="row my-5 text-center">
+      <div class="row my-5 text-center" id="contacto">
         <h3 class="text-black">Tenés alguna pregunta?</h3>
         <h4 class="text-mr">esperamos tu consulta</h4>
         <p>Si tienes alguna duda ponte en contacto con nosotros.</p>
@@ -145,6 +148,7 @@
             <div
               class="card shadow mx-auto"
               style="width: 18rem; height: 14rem"
+              data-aos="zoom-in-up"
             >
               <div class="card-body">
                 <h2 class="card-title my-3" style="color: #d96525">
@@ -167,6 +171,7 @@
             <div
               class="card shadow mx-auto"
               style="width: 18rem; height: 14rem"
+              data-aos="zoom-in-up"
             >
               <div class="card-body">
                 <h2 class="card-title my-3" style="color: #d96525">
@@ -190,6 +195,7 @@
             <div
               class="card shadow mx-auto"
               style="width: 18rem; height: 14rem"
+              data-aos="zoom-in-up"
             >
               <div class="card-body">
                 <h2 class="card-title my-3" style="color: #d96525">
@@ -209,46 +215,49 @@
 
     <!-- footer -->
     <footer class="bg-dark text-white mt-4">
-      <div class="p-4 row text-center">
-        <div>
-          <h5 class="text-uppercase">
-            <img
-              src="https://i.imgur.com/8h67qH3.png"
-              class="rounded-circle"
-              width="60px"
-              height="60px"
-            />DGAMIGURUMI
-          </h5>
-        </div>
+      <div class="container p-4">
+        <div class="d-grid gap-3 text-center">
+          <div>
+            <h5 class="text-uppercase">
+              <img
+                src="https://i.imgur.com/8h67qH3.png"
+                class="rounded-circle"
+                width="60px"
+                height="60px"
+              />DGAMIGURUMI
+            </h5>
+          </div>
 
-        <div class="list-unstyled" id="cont">
-          <h5 class="text-uppercase">Contacto</h5>
-          <a
-            href="https://www.instagram.com/dgamigurumi/"
-            class="text-decoration-none text-white"
-            ><i class="bi bi-instagram me-1"></i>DGAMIGURUMI
-          </a>
-          <br />
-          <a href="#!" class="text-white text-decoration-none"
-            >danielaguiffrey@gmail.com</a
-          >
-          <a href="#!" class="text-decoration-none text-white">
-            <p>
-              <i class="bi bi-geo-alt-fill me-1"></i>Villa Elisa, Entre Riós
-            </p>
-          </a>
-        </div>
-        <div class="align-bottom">
-          <a
-            href="https://www.instagram.com/franasemb/"
-            class="text-decoration-none text-white text-center"
-          >
-            <p>©Web creada por Franco Asemborn</p>
-          </a>
+          <div class="list-unstyled" id="cont">
+            <h5 class="text-uppercase">Contacto</h5>
+            <a
+              href="https://www.instagram.com/dgamigurumi/"
+              class="text-decoration-none text-white"
+              ><i class="bi bi-instagram me-1"></i>DGAMIGURUMI
+            </a>
+            <br />
+            <a href="#!" class="text-white text-decoration-none"
+              >danielaguiffrey@gmail.com</a
+            >
+            <a href="#!" class="text-decoration-none text-white">
+              <p>
+                <i class="bi bi-geo-alt-fill me-1"></i>Villa Elisa, Entre Riós
+              </p>
+            </a>
+          </div>
+          <div class="align-bottom">
+            <a
+              href="https://www.instagram.com/franasemb/"
+              class="text-decoration-none text-white text-center"
+            >
+              <p>©Web creada por Franco Asemborn</p>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -259,17 +268,12 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(window).scroll(function () {
-        if ($("#menu").offset().top > 230) {
-          $("#menu").addClass("gris-oscuro");
-        } else {
-          $("#menu").removeClass("gris-oscuro");
-        }
-      });
-    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       $(document).ready(function () {
         $("a").on("click", function (event) {
