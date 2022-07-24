@@ -6,6 +6,7 @@ app
   .use(express.static(__dirname + "/public"))
   .set("view engine", "ejs")
   .set("views", path.join(__dirname, "/views"))
+  .engine('ejs', require('ejs').__express)
   .use(express.urlencoded({ extended: true }));
 app.listen(process.env.PORT || 3000, () => {
   console.log("pagina prendida");

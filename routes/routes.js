@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("home",{link:'localhost:3000/trabajos#pulpos'});
+  res.render("home");
 });
 router.get("/trabajos", (req, res) => {
   res.render("trabajos");
